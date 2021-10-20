@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Log4NetCore", "Log4NetCore\Log4NetCore.csproj", "{3D34A5CF-2DD6-4695-9A5F-D058F5E28864}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Log4NetCoreConsole", "Log4NetCoreConsole\Log4NetCoreConsole.csproj", "{9D794C0A-E5EE-4D07-9E24-BC68B55AAD70}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3D34A5CF-2DD6-4695-9A5F-D058F5E28864}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D34A5CF-2DD6-4695-9A5F-D058F5E28864}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D34A5CF-2DD6-4695-9A5F-D058F5E28864}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D34A5CF-2DD6-4695-9A5F-D058F5E28864}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D794C0A-E5EE-4D07-9E24-BC68B55AAD70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D794C0A-E5EE-4D07-9E24-BC68B55AAD70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D794C0A-E5EE-4D07-9E24-BC68B55AAD70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D794C0A-E5EE-4D07-9E24-BC68B55AAD70}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B8F29B7A-07E1-4150-823F-62249F94CB65}
+	EndGlobalSection
+EndGlobal
