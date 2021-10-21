@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -17,6 +18,18 @@ namespace Log4NetCore
         {
             factory.AddProvider(new Log4NetCoreProvider(configFile));
             return factory;
+        }
+
+        public static ILoggingBuilder AddLog4Net(this ILoggingBuilder builder)
+        {
+            builder.Services.AddSingleton<ILoggerProvider>(new Log4NetCoreProvider());
+            return builder;
+        }
+
+        public static ILoggingBuilder AddLog4Net(this ILoggingBuilder builder, string configFile)
+        {
+            builder.Services.AddSingleton<ILoggerProvider>(new Log4NetCoreProvider(configFile));
+            return builder;
         }
     }
 }

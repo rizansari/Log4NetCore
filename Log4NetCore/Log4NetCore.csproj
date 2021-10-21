@@ -5,6 +5,14 @@
     <Authors>Rizwan Ansari</Authors>
     <Description>Integrate log4net easily in .NET Core applications.</Description>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>Log4NetCoreEx</PackageId>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>http://rizwanansari.net</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/rizansari/Log4NetCore</RepositoryUrl>
+    <PackageTags>log4net, .net core, logging</PackageTags>
+    <Version>1.0.2</Version>
+    <AssemblyVersion>1.0.2.0</AssemblyVersion>
+    <PackageReleaseNotes>fixes</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>

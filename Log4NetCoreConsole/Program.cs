@@ -13,20 +13,25 @@ namespace Log4NetCoreConsole
             var serviceProvider = new ServiceCollection()
                 .AddLogging(loggingBuilder =>
                 {
-                    loggingBuilder.AddConsole(opt => opt.LogToStandardErrorThreshold = LogLevel.Debug);
-                    
+                    loggingBuilder.SetMinimumLevel(Microsoft.Extensions.Logging.LogLevel.Trace);
+                    loggingBuilder.AddConsole();
+
                 })
                 .BuildServiceProvider();
 
-            var logger = serviceProvider.GetService<ILoggerFactory>()
+            var logger = serviceProvider.GetService<ILoggerFactory>()                
                 .AddLog4NetCore("log4net.config")
                 .CreateLogger<Program>();
 
-            logger.LogInformation("Starting application");
-            
-            logger.LogWarning("All done!");
+            logger.LogDebug("debug");
 
-            logger.LogInformation("Starting application");
+            logger.LogDebug("debug param1:{0}, param2:{1}", "One", "Two");
+
+            logger.LogInformation("information");
+            
+            logger.LogWarning("warning");
+
+            logger.LogError(new Exception("exception message"), "error");
 
             Console.WriteLine("test");
         }
